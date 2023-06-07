@@ -18,7 +18,7 @@ jobs:
            print(platform.processor())
        shell: python
   run-windows-commands: 
-     runs-on: widnows:latest
+     runs-on: widnows-latest
      steps:
      - name: Directory PowerShell
        run: Get-Location
