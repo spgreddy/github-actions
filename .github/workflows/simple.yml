@@ -4,26 +4,26 @@ on: [push]
 
 jobs:
   runs-shell-commands:
-     runs-on: ubuntu-latest
-     steps:
-     - name: echo a string
-       run: echo "Hello String"
-     - name: multiline 
-       run: |
-           node -v
-           npm -v
-     - name: python command
-       run: | 
-           import platform
-           print(platform.processor())
-       shell: python
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello String"
+      - name: multiline 
+        run: |
+            node -v
+            npm -v
+      - name: python command
+        run: | 
+            import platform
+            print(platform.processor())
+        shell: python
   run-windows-commands: 
-     runs-on: Widnows-latest
-     steps:
-     - name: Directory PowerShell
-       run: Get-Location
-     - name: Directory Bash
-       run: pwd
-     - name: date and time
-       run: Date
-       shell: bash
+    runs-on: widnows-latest
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+      - name: date and time
+        run: Date
+        shell: bash
