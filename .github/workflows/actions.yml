@@ -12,7 +12,10 @@ jobs:
                     ls -a
                     echo $GITHUB_SHA
                     echo $GITHUB_REPOSITORY
-                    ehco $GITHUB_WORKSPACE
+                    echo $GITHUB_WORKSPACE
+                    echo "${{github.token}}"
+                    # git clone git@github.com:$GITHUB_REPOSITORY
+                    # git checkout $GITHUB_SHA
 
 
             - name: Checkout
