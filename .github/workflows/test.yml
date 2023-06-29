@@ -9,6 +9,7 @@ jobs:
         - name: echo a string
           run:  echo "Hello World"
         - name: multiline script
-          run:  node -v
+          run:  |
+                node -v
                 npm -v
   
