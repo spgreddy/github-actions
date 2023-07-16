@@ -1,0 +1,17 @@
+name: Siva
+age: 50
+address: "murargrand: Almhult"
+active: true
+key:
+key: value
+key2: 333
+key3: 
+  key: value
+  key2: value
+jsonObject: { key: value, key2: 33, key3: {key: value, key2: value}}
+array: 
+  - item1
+  - item2
+  - { key: value }
+jsonArray: [item1, item2] 
+  
